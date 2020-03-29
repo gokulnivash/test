@@ -16,6 +16,9 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
+from testapp.views import ActivityPeriodView
+
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('activity/names/',ActivityPeriodView.as_view())
 ]

@@ -1,5 +1,6 @@
 # test
-Created a model of required structure and populated the model with given sample value and retrived the model values while hitting the respective URL
+* Created a simple model for the given sample template, and populated the model with the sample data.
+* Retrieved the value from the model (table/database) by hitting/calling the respective URL.
 
 Model Name : NameDetails
 

@@ -11,7 +11,8 @@ logger = logging.getLogger(__name__)
 
 # Create your views here.
 class ActivityPeriodView(generics.GenericAPIView):
-
+    permission_classes = (permissions.AllowAny,)
+    authentication_classes = []
     def get(self,request):
         try:
             name_details = NameDetails.objects.all().values('id','real_name','tz','activity')
